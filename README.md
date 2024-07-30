@@ -21,7 +21,7 @@ The Event Attendance Management System is a web application designed to manage e
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/event-attendance-management.git
+   git clone https://github.com/giiaann/listapresenca.git
    cd event-attendance-management
    run the script (./run_app.sh) located inside listapresenca folder.
 
@@ -29,7 +29,7 @@ The Event Attendance Management System is a web application designed to manage e
 
 1. **Clone the repository:**
    
-    https://github.com/yourusername/event-attendance-management.git
+    https://github.com/giiaann/listapresenca.git
  
     run "run_app.bat" to ensure Python and pip are installed and runs the application.
     The executable will be located in the dist directory - dist\app.exe
