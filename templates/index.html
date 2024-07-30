@@ -8,50 +8,48 @@
 </head>
 <body>
     <div class="top-menu">
+        <div id="loadedFile">{{ loaded_file }}</div>
         <select id="menuSelect">
+            <option value="menu">Select an option</option>
             <option value="reset">Reset</option>
             <option value="generateReport">Generate Report</option>
             <option value="about">About</option>
         </select>
+        <div id="attendanceStats"></div>
+        <div id="clock"></div>
+        <div id="countdown"></div>
+        <button id="undoButton">Undo Last Action</button>
     </div>
     <div class="container">
-        <div class="left-column">
+        <div class="left-column scrollable">
             <h2>Upload CSV</h2>
             <form id="uploadForm" enctype="multipart/form-data">
                 <input type="file" name="file" accept=".csv" required>
                 <button type="submit">Upload</button>
             </form>
+            <div id="uploadMessage"></div>
 
-            <h2>Add Attendee</h2>
-            <form id="addAttendeeForm">
-                <input type="text" name="name" placeholder="Name" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="text" name="registration_id" placeholder="Registration ID" required>
-                <button type="submit">Add Attendee</button>
+            <h2>Search Guest</h2>
+            <form id="searchForm">
+                <input type="text" name="name" placeholder="Search guest by name" required>
+                <button type="submit">Search</button>
             </form>
 
-            <h2>Remove Attendee</h2>
-            <form id="removeAttendeeForm">
-                <input type="text" name="registration_id" placeholder="Registration ID" required>
-                <button type="submit">Remove Attendee</button>
-            </form>
-
-            <h2>Check-in Attendee</h2>
-            <form id="checkInForm">
-                <input type="text" name="registration_id" placeholder="Registration ID" required>
-                <button type="submit">Check-in</button>
-            </form>
-
-            <h2>Undo Check-in</h2>
-            <form id="undoCheckInForm">
-                <input type="text" name="registration_id" placeholder="Registration ID" required>
-                <button type="submit">Undo Check-in</button>
-            </form>
-        </div>
-        <div class="right-column">
             <h2>Attendee List</h2>
             <div id="attendeeList">
                 <!-- Attendee list will be updated here -->
+            </div>
+        </div>
+        <div class="middle-column scrollable">
+            <h2>Checked-in Invitees</h2>
+            <div id="checkedInList">
+                <!-- Checked-in invitees will be updated here -->
+            </div>
+        </div>
+        <div class="right-column scrollable">
+            <h2>Guest Details</h2>
+            <div id="guestDetails">
+                <!-- Guest details will be updated here -->
             </div>
         </div>
     </div>
