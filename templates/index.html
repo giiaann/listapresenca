@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Attendance</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="top-menu">
+        <select id="menuSelect">
+            <option value="reset">Reset</option>
+            <option value="generateReport">Generate Report</option>
+            <option value="about">About</option>
+        </select>
+    </div>
+    <div class="container">
+        <div class="left-column">
+            <h2>Upload CSV</h2>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" name="file" accept=".csv" required>
+                <button type="submit">Upload</button>
+            </form>
+
+            <h2>Add Attendee</h2>
+            <form id="addAttendeeForm">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="registration_id" placeholder="Registration ID" required>
+                <button type="submit">Add Attendee</button>
+            </form>
+
+            <h2>Remove Attendee</h2>
+            <form id="removeAttendeeForm">
+                <input type="text" name="registration_id" placeholder="Registration ID" required>
+                <button type="submit">Remove Attendee</button>
+            </form>
+
+            <h2>Check-in Attendee</h2>
+            <form id="checkInForm">
+                <input type="text" name="registration_id" placeholder="Registration ID" required>
+                <button type="submit">Check-in</button>
+            </form>
+
+            <h2>Undo Check-in</h2>
+            <form id="undoCheckInForm">
+                <input type="text" name="registration_id" placeholder="Registration ID" required>
+                <button type="submit">Undo Check-in</button>
+            </form>
+        </div>
+        <div class="right-column">
+            <h2>Attendee List</h2>
+            <div id="attendeeList">
+                <!-- Attendee list will be updated here -->
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
