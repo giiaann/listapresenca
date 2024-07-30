@@ -1,23 +1,6 @@
 # Event Attendance Management System
 
-## Overview
-
-The Event Attendance Management System is a very basic web application designed to manage events in its early stages.
-
-## Structure
-
-- **`app.py`**: The main Flask application file that handles routing and business logic.
-- **`templates/index.html`**: The main HTML file for the frontend interface.
-- **`static/styles.css`**: CSS file for styling the frontend.
-- **`static/scripts.js`**: JavaScript file for handling frontend interactions.
-- **`requirements.txt`**: Lists all Python dependencies.
-- **`run_app.sh`**: Shell script to run the application on Linux.
-- **`run_app.bat`**: Batch file to run the application on Windows.
-- **`check_and_install_dependencies.py`**: Python script to check and install dependencies.
-
-# Event Attendance Management System Introduction
-
-Welcome to the Event Attendance Management System! This application helps you manage event attendance by uploading a CSV file of attendees, checking them in, and generating simple reports. Below, you'll find a step-by-step guide to help you get started.
+Welcome to the Event Attendance Management System! This application helps you manage event attendance by uploading a CSV file of attendees, checking them in, and generating reports. Below, you'll find a step-by-step guide to help you get started, even if you're new to Linux.
 
 ## Prerequisites
 
@@ -66,18 +49,18 @@ Before you can run the application, you need to ensure that Python 3 and pip are
 
 4. **Check and Install Dependencies**:
    - In the terminal, type the following command and press `Enter`:
-     
+     ```sh
      python3 check_and_install_dependencies.py
-    
+     ```
    - This script will ensure that all required packages are installed.
 
 ## Running the Application
 
 1. **Run the Application**:
    - In the terminal, type the following command and press `Enter`:
-     
+     ```sh
      ./Event_AttendanceApp
-     
+     ```
    - This will start the application, and you should see output indicating that the Flask server is running.
 
 2. **Access the Web Interface**:
@@ -115,18 +98,3 @@ Before you can run the application, you need to ensure that Python 3 and pip are
 - **Web Interface Not Loading**:
   - Ensure your web browser is pointing to `http://127.0.0.1:5000`.
   - Check if the Flask server is running by looking at the terminal output.
-
-## Support
-
-If you encounter any issues or need further assistance, please contact our support team at [giancarlo.guimaraes21@gmail.com](mailto:support@example.com).
-
-Thank you for using the Event Attendance Management System! We hope it helps you manage your events efficiently.
-
-
-## Future updates
-
-Full PT-BR language translation 
-Language selection
-Windows port with documentation and executable (.exe)
-Add/remove atteattendance on demand
-Customize backupfolder
