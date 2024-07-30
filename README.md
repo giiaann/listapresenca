@@ -41,12 +41,21 @@ Before you can run the application, you need to ensure that Python 3 and pip are
 1. **Download the Application**:
    - Download the application files from the repository or receive them from a colleague. The files should include the `Event_AttendanceApp` script, the `dist` folder containing the executable `app`, and the `check_and_install_dependencies.py` script.
 
+<<<<<<< HEAD
 2. **Navigate to the Application Folder**:
    - Open your file manager (e.g., Nautilus, Dolphin) and navigate to the folder where you downloaded the application files.
+=======
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/giiaann/listapresenca.git
+   cd event-attendance-management
+   run the script (./run_app.sh) located inside listapresenca folder.
+>>>>>>> 55af5f38f625ab7d756f5e2f022ed8e935dfd244
 
 3. **Open a Terminal**:
    - Right-click within the application folder and select "Open in Terminal" (the exact wording may vary depending on your file manager).
 
+<<<<<<< HEAD
 4. **Check and Install Dependencies**:
    - In the terminal, type the following command and press `Enter`:
      ```sh
@@ -98,3 +107,11 @@ Before you can run the application, you need to ensure that Python 3 and pip are
 - **Web Interface Not Loading**:
   - Ensure your web browser is pointing to `http://127.0.0.1:5000`.
   - Check if the Flask server is running by looking at the terminal output.
+=======
+1. **Clone the repository:**
+   
+    https://github.com/giiaann/listapresenca.git
+ 
+    run "run_app.bat" to ensure Python and pip are installed and runs the application.
+    The executable will be located in the dist directory - dist\app.exe
+>>>>>>> 55af5f38f625ab7d756f5e2f022ed8e935dfd244
