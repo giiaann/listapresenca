@@ -25,7 +25,7 @@ Before you can run the application, you need to ensure that Python 3 and pip are
 
 1. **Check and Install Dependencies**:
 
-For Windows users, the application is meant to ready for use. But, to make sure you have all libs and dependencies, there is one check_install.bat script that should check everything for you.
+For Windows users, the application is meant to ready for use. But, to make sure you have all libs and dependencies, there is one <b>"*check_install.bat*"<b> script that should check everything for you.
 
 ## Running the Application
 
@@ -34,7 +34,7 @@ For Windows users, the application is meant to ready for use. But, to make sure 
    - Inside "dist" folder should be a app.exe file, which is the one you should create the shortcut for. There is a .txt file inside this folder that will help you if you don't know how to create a shortcut.
    - After running the app, you should see the Event Attendance Management System web console.
  
-   *** VERY IMPORTANT: It is essential you keep this terminal open while you want the application running ***
+   *VERY IMPORTANT: It is essential you keep this terminal open while you want the application running*
    
 2. **Access the Web Interface**:
    - Open a web browser (e.g., Firefox, Chrome) and navigate to `http://127.0.0.1:5000`.
