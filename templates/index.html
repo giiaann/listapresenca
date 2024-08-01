@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Attendance</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="top-menu">
+        <div id="loadedFile">{{ loaded_file }}</div>
+        <select id="menuSelect">
+            <option value="menu">Select an option</option>
+            <option value="reset">Reset</option>
+            <option value="generateReport">Generate Report</option>
+            <option value="about">About</option>
+        </select>
+        <button id="saveButton">Save</button> <!-- Ensure this line is present -->
+        <div id="attendanceStats"></div>
+        <div id="clock"></div>
+        <div id="countdown"></div>
+        <button id="undoButton">Undo Last Action</button>
+    </div>
+    <div class="container">
+        <div class="left-column scrollable">
+            <h2>Upload CSV</h2>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" name="file" accept=".csv" required>
+                <button type="submit">Upload</button>
+            </form>
+            <div id="uploadMessage"></div>
+
+            <h2>Search Guest</h2>
+            <form id="searchForm">
+                <input type="text" name="name" placeholder="Search guest by name" required>
+                <button type="submit">Search</button>
+            </form>
+
+            <h2>Attendee List</h2>
+            <div id="attendeeList">
+                <!-- Attendee list will be updated here -->
+            </div>
+        </div>
+        <div class="middle-column scrollable">
+            <h2>Checked-in Invitees</h2>
+            <div id="checkedInList">
+                <!-- Checked-in invitees will be updated here -->
+            </div>
+        </div>
+        <div class="right-column scrollable">
+            <h2>Guest Details</h2>
+            <div id="guestDetails">
+                <!-- Guest details will be updated here -->
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>

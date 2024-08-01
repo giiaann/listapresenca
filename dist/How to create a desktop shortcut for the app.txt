@@ -1,0 +1,4 @@
+Inside listapresenca-main/dist folder should is your main python app executable. 
+
+Step 1: Right click on it then 
+Step 2: Look for create shortcut/ send to desktop options

@@ -1,0 +1,8 @@
+name,email,id,checked_in,check_in_time
+vanessa,vanessa@email.com,1,False,
+gian,gian@email.com,2,False,
+lorena,lorena@email.com,3,False,
+luiz,emailteste@teste.com,4,False,
+felipe,emailteste@teste.com,5,False,
+gustavo,emailteste@teste.com,6,False,
+wilmar,email@teste.com,7,False,
