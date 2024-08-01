@@ -32,7 +32,8 @@ For Windows users, the application is meant to ready for use. But, to make sure 
 1. **Create shortcut/ run the .exe**:
    - Inside the "listapresenca-main" folder there are the main files and a folder called "dist".
    - Inside "dist" folder should be a app.exe file, which is the one you should create the shortcut for. There is a .txt file inside this folder that will help you if you don't know how to create a shortcut.
-   - After running the app, you should see the Event Attendance Management System web console. 
+   - After running the app, you should see the Event Attendance Management System web console.
+ 
    *** VERY IMPORTANT: It is essential you keep this terminal open while you want the application running ***
    
 2. **Access the Web Interface**:
